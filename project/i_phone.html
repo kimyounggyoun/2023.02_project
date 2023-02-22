@@ -48,15 +48,15 @@
     </div>
 
     <script>
-                    let gameCount = 2   /*추가된 어플 총 갯수*/
-            window.onload = function () {
-                time();
-                setInterval(time, 20000);
-                mainIconClick();
-                homeBtnClick();
-                app_add(gameCount);
-            }
-        
+        let gameCount = 2   /*추가된 어플 총 갯수*/
+        window.onload = function () {
+            time();
+            setInterval(time, 20000);
+            mainIconClick();
+            homeBtnClick();
+            app_add(gameCount);
+        }
+
         // UI 좌측상단 디지털시계
         function time() {
             let timeBox = document.querySelector("#time");
@@ -125,6 +125,7 @@
             app_1.addEventListener(('click'), () => {
                 gameScreen.classList.add("appBoxShow");
                 gameScreen.style.scale = "1";
+
                 iframe.src = "./2048/2048.html";
                 gameOn = true;
             })

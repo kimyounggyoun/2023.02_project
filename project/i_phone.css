@@ -222,10 +222,10 @@
         }
 
         .gameScreen {
-            position: absolute;     
+            position: absolute;
 
-            width: 484px;
-            height: 803px;
+            width: 485px;
+            height: 804px;
 
             z-index: 10;
             scale: 0;
